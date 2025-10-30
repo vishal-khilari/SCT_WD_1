@@ -408,9 +408,9 @@ section.visible {
     gap: 2rem;
   }
 
-  #about,
-  #services,
-  #contact {
+  /* #about, */
+  #services
+  /* ,#contact  */ {
     min-height: auto;
     padding: 5rem 5%;
   }
