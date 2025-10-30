@@ -1,7 +1,6 @@
 const navbar = document.getElementById("navbar");
 const burger = document.getElementById("burger");
 const navLinks = document.getElementById("navLinks");
-const sections = document.querySelectorAll("section");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
@@ -9,15 +8,6 @@ window.addEventListener("scroll", () => {
   } else {
     navbar.classList.remove("scrolled");
   }
-
-  sections.forEach((section) => {
-    const sectionTop = section.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-
-    if (sectionTop < windowHeight * 0.75) {
-      section.classList.add("visible");
-    }
-  });
 });
 
 burger.addEventListener("click", () => {
@@ -43,5 +33,3 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
-
-window.dispatchEvent(new Event("scroll"));

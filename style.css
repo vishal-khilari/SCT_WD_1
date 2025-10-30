@@ -156,19 +156,7 @@ nav.scrolled .burger span {
   max-width: 900px;
   position: relative;
   z-index: 2;
-  opacity: 0;
-  animation: fadeInUp 1s ease forwards 0.3s;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  opacity: 1;
 }
 
 .hero-content h1 {
@@ -189,12 +177,6 @@ nav.scrolled .burger span {
 }
 
 section {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease;
-}
-
-section.visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -408,9 +390,7 @@ section.visible {
     gap: 2rem;
   }
 
-  /* #about, */
-  #services
-  /* ,#contact  */ {
+  #services {
     min-height: auto;
     padding: 5rem 5%;
   }
